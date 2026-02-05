@@ -80,7 +80,7 @@ cron.schedule('0 1 * * *', async () => {
 // CORS настройки
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
-    ? process.env.FRONTEND_URL || 'https://your-frontend-domain.vercel.app'
+    ? ['https://backend-json-azure.vercel.app', 'https://backend-json-o6t5.vercel.app']
     : 'http://localhost:8847',
   credentials: true
 }

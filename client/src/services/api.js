@@ -2,7 +2,7 @@ class ApiService {
   constructor() {
     // Определяем базовый URL в зависимости от окружения
     this.baseURL = process.env.NODE_ENV === 'production' 
-      ? 'https://your-backend.vercel.app/api'  // Замените на ваш домен Vercel для backend
+      ? 'https://backend-json-o6t5.vercel.app/api'  // Ваш backend URL
       : '/api'
     this.token = localStorage.getItem('token')
   }
