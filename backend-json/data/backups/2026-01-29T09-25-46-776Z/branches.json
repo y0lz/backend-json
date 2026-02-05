@@ -1,0 +1,23 @@
+[
+  {
+    "id": "branch_1",
+    "name": "Каширина",
+    "address": "Каширина 11",
+    "phone": "+7-800-100-10-01",
+    "isActive": true
+  },
+  {
+    "id": "branch_2",
+    "name": "Ялтинская",
+    "address": "Ялтинская 169",
+    "phone": "+7-800-100-10-02",
+    "isActive": true
+  },
+  {
+    "id": "branch_3",
+    "name": "Васильева",
+    "address": "Генерала Васильева 27г",
+    "phone": "+7-800-100-10-03",
+    "isActive": true
+  }
+]

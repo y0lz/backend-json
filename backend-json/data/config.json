@@ -1,0 +1,20 @@
+{
+  "system": {
+    "name": "Taxi Management System",
+    "version": "2.0.0-json",
+    "adminHashKey": "simple-admin-key-2026"
+  },
+  "telegram": {
+    "botToken": "8407210628:AAFUjyCtZDnqF_9QnxKK2z_qKNwn5owoXLw",
+    "webhookUrl": ""
+  },
+  "server": {
+    "port": 8848,
+    "corsOrigin": "http://localhost:8847"
+  },
+  "backup": {
+    "enabled": true,
+    "intervalHours": 24,
+    "keepDays": 30
+  }
+}

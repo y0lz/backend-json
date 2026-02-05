@@ -1,0 +1,14 @@
+[
+  {
+    "id": "assignment_1769678746773",
+    "date": "2026-01-29",
+    "status": "assigned",
+    "courierId": "user_1769678746764",
+    "passengerId": "passenger_test",
+    "branchId": "branch_001",
+    "assignedTime": "10:00",
+    "pickupAddress": "Адрес подачи",
+    "dropoffAddress": "Адрес назначения",
+    "createdAt": "2026-01-29T09:25:46.773Z"
+  }
+]

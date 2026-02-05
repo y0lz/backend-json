@@ -1,0 +1,72 @@
+[
+  {
+    "id": "shift_1769159260301",
+    "userId": "user_1768904348938",
+    "telegramId": "488602863",
+    "branchId": "branch_1",
+    "startTime": "12:07",
+    "endTime": "20:00",
+    "isWorking": true,
+    "date": "2026-01-23",
+    "createdAt": "2026-01-23T09:07:40.301Z"
+  },
+  {
+    "id": "shift_1769161840196",
+    "userId": "user_1769161713235",
+    "telegramId": "1288136931",
+    "branchId": "branch_1",
+    "startTime": "12:50",
+    "endTime": "22:00",
+    "destinationAddress": "Сосновая 30",
+    "isWorking": true,
+    "date": "2026-01-23",
+    "createdAt": "2026-01-23T09:50:40.196Z"
+  },
+  {
+    "id": "shift_1769162155211",
+    "userId": "user_1769161824560",
+    "telegramId": "899043253",
+    "branchId": "branch_1",
+    "startTime": "12:55",
+    "endTime": "23:00",
+    "destinationAddress": "г. Симферополь, ул. Панфиловцев 25, р-н Кечкеметской улицы.",
+    "isWorking": true,
+    "date": "2026-01-23",
+    "createdAt": "2026-01-23T09:55:55.211Z"
+  },
+  {
+    "id": "shift_1769162377991",
+    "userId": "user_1769162325881",
+    "telegramId": "957209804",
+    "branchId": "branch_1",
+    "startTime": "12:59",
+    "endTime": "00:00",
+    "destinationAddress": "Молодежное строителей 4",
+    "isWorking": true,
+    "date": "2026-01-23",
+    "createdAt": "2026-01-23T09:59:37.991Z"
+  },
+  {
+    "id": "shift_1769163422962",
+    "userId": "user_1769163413460",
+    "telegramId": "719801303",
+    "branchId": "branch_1",
+    "startTime": "13:17",
+    "endTime": "23:00",
+    "destinationAddress": "423432",
+    "isWorking": true,
+    "date": "2026-01-23",
+    "createdAt": "2026-01-23T10:17:02.962Z"
+  },
+  {
+    "id": "shift_1769678746771",
+    "date": "2026-01-29",
+    "userId": "user_1769678746764",
+    "telegramId": "999999999",
+    "branchId": "branch_001",
+    "startTime": "09:00",
+    "endTime": "18:00",
+    "isWorking": true,
+    "createdAt": "2026-01-29T09:25:46.771Z"
+  }
+]

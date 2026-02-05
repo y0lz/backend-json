@@ -1,0 +1,38 @@
+{
+  "name": "taxi-management-json-backend",
+  "version": "2.0.0",
+  "description": "Simplified JSON-based taxi management backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "bot": "node src/bot/start-bot.js",
+    "test": "echo \"No tests yet\" && exit 0",
+    "test:supabase": "node test-supabase.js",
+    "test:lowdb": "node test-lowdb.js",
+    "build": "echo 'No build step needed for backend'"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.94.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "form-data": "^4.0.5",
+    "lowdb": "^7.0.1",
+    "node-cron": "^4.2.1",
+    "node-telegram-bot-api": "^0.61.0",
+    "proper-lockfile": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "supabase": "^2.75.3"
+  },
+  "keywords": [
+    "taxi",
+    "management",
+    "json",
+    "simple"
+  ],
+  "author": "Taxi Management Team",
+  "license": "MIT"
+}
