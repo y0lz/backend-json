@@ -3,10 +3,28 @@ const SupabaseDataSyncService = require('../services/SupabaseDataSyncService')
 
 class TaxiTelegramBot {
   constructor(token) {
-    this.bot = new TelegramBot(token, { polling: true })
+    this.bot = new TelegramBot(token, { 
+      polling: {
+        interval: 1000,
+        autoStart: true,
+        params: {
+          timeout: 10
+        }
+      }
+    })
     this.dataService = SupabaseDataSyncService
     this.registrationSessions = new Map() // Хранение сессий регистрации
     this.shiftSessions = new Map() // Хранение сессий открытия смены
+    
+    // Обработка ошибок
+    this.bot.on('polling_error', (error) => {
+      console.error('❌ Ошибка polling:', error.code, error.message)
+    })
+    
+    this.bot.on('webhook_error', (error) => {
+      console.error('❌ Ошибка webhook:', error.message)
+    })
+    
     this.setupHandlers()
   }
 
