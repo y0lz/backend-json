@@ -1034,12 +1034,15 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../../client/dist/index.html'))
 })
 
-// Start server
-const PORT = process.env.PORT || 8848
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`🚀 JSON Taxi Management Server running on port ${PORT}`)
-  console.log(`📊 Health check: http://localhost:${PORT}/health`)
-  console.log(`🔧 Debug data: http://localhost:${PORT}/api/debug/data`)
-})
-
+// Export app for Vercel serverless deployment
 module.exports = app
+
+// Start server only in development
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = process.env.PORT || 8848
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`🚀 JSON Taxi Management Server running on port ${PORT}`)
+    console.log(`📊 Health check: http://localhost:${PORT}/health`)
+    console.log(`🔧 Debug data: http://localhost:${PORT}/api/debug/data`)
+  })
+}

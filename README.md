@@ -60,20 +60,19 @@ npx supabase link --project-ref YOUR_PROJECT_REF
 npx supabase db push
 ```
 
-### 2. Развертывание Backend (Railway)
-1. Зарегистрируйтесь на [railway.app](https://railway.app)
+### 2. Развертывание Backend (Vercel)
+1. Зарегистрируйтесь на [vercel.com](https://vercel.com)
 2. Создайте новый проект из GitHub репозитория
-3. Установите переменные окружения:
+3. Установите Root Directory: `backend-json`
+4. Установите переменные окружения:
 ```env
 SUPABASE_URL=your_supabase_url
 SUPABASE_ANON_KEY=your_anon_key
 SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
 PRIMARY_STORAGE=supabase
 NODE_ENV=production
-PORT=8848
-FRONTEND_URL=https://your-frontend-domain.vercel.app
 ```
-4. Railway автоматически развернет backend
+5. Vercel автоматически развернет backend
 
 ### 3. Развертывание Frontend (Vercel)
 1. Зарегистрируйтесь на [vercel.com](https://vercel.com)
@@ -82,19 +81,19 @@ FRONTEND_URL=https://your-frontend-domain.vercel.app
 4. Обновите `client/src/services/api.js`:
 ```javascript
 this.baseURL = process.env.NODE_ENV === 'production' 
-  ? 'https://your-backend-domain.railway.app/api'
+  ? 'https://your-backend.vercel.app/api'
   : '/api'
 ```
 5. Vercel автоматически развернет frontend
 
 ### 4. Настройка CORS
-Обновите `FRONTEND_URL` в Railway с актуальным доменом Vercel.
+CORS автоматически настраивается Vercel для serverless функций.
 
 ## 🤖 Настройка Telegram бота (опционально)
 
 1. Создайте бота через @BotFather
 2. Получите токен
-3. Добавьте в переменные Railway:
+3. Добавьте в переменные Vercel (backend проект):
 ```env
 TELEGRAM_BOT_TOKEN=YOUR_BOT_TOKEN_HERE
 ```
@@ -146,8 +145,7 @@ SUPABASE_SYNC_ENABLED=false
 - **Диск**: минимум 1 ГБ
 
 ### Продакшен
-- **Railway**: Backend хостинг
-- **Vercel**: Frontend хостинг  
+- **Vercel**: Backend и Frontend хостинг  
 - **Supabase**: База данных PostgreSQL
 
 ## 🚨 Решение проблем
@@ -210,13 +208,12 @@ npx supabase gen types typescript --linked > types/supabase.ts
 
 **Версия**: 2.0.0  
 **Архитектура**: Supabase PostgreSQL  
-**Развертывание**: Railway + Vercel + Supabase  
+**Развертывание**: Vercel + Supabase  
 **Дата**: Февраль 2026
 
 ## 🔗 Полезные ссылки
 
 - [Supabase Documentation](https://supabase.com/docs)
-- [Railway Deployment Guide](https://docs.railway.app)
 - [Vercel Deployment Guide](https://vercel.com/docs)
 - [React Documentation](https://react.dev)
 - [Material-UI Components](https://mui.com)
